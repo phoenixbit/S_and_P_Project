@@ -6,10 +6,10 @@ function PEBox() {
     const [sp500PE, setSp500PE] = useState("");
 
     
-    // Function to fetch data from the Flask server
+   // Function to fetch data from the Flask server
     const fetchData = async () => {
         try {
-            const response = await fetch('/data');  // Replace '/data' with the actual route if it's different
+            const response = await fetch('http://localhost:5000/data');
             const jsonData = await response.json();
 
             // Update state variables with the fetched data
@@ -19,6 +19,7 @@ function PEBox() {
             console.error(err.message);
         }
     }
+
 
     // Use an effect hook to fetch the data when the component mounts
     useEffect(() => {
