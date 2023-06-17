@@ -4,7 +4,7 @@ This project is for personal use and is for the scraping of different details of
 ## Running the code
 1. To run this code navigate to the backend directory namely,
    `../backend`
-2. Run 'python .\s_and_p500Const.py'
+2. Run `python .\s_and_p500Const.py`
 3. To run this code navigate to the frontend directory namely,
    `../frontend`
 4. Run `npm start`
